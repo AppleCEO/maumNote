@@ -1,5 +1,5 @@
 //
-//  TextNode.swift
+//  DetailNode.swift
 //  maumNote
 //
 //  Created by joon-ho kil on 2020/05/22.

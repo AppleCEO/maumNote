@@ -1,5 +1,5 @@
 //
-//  NodeViewController.swift
+//  DetailNodeViewController.swift
 //  maumNote
 //
 //  Created by joon-ho kil on 2020/05/22.

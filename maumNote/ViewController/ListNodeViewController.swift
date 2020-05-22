@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+// ListView
 //  maumNote
 //
 //  Created by joon-ho kil on 2020/05/22.
@@ -9,7 +9,7 @@
 import UIKit
 import AsyncDisplayKit
 
-class ListViewController: ASViewController<ASTableNode> {
+class ListNodeViewController: ASViewController<ASTableNode> {
   var items: [String] = ["Welcome to Texture-KR",
                          "Welcome to Texture-KR",
                          "Welcome to Texture-KR, long test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"]
@@ -36,7 +36,7 @@ class ListViewController: ASViewController<ASTableNode> {
   }
 }
 
-extension ListViewController: ASTableDelegate, ASTableDataSource {
+extension ListNodeViewController: ASTableDelegate, ASTableDataSource {
   
   func numberOfSections(in tableNode: ASTableNode) -> Int {
     return 1
