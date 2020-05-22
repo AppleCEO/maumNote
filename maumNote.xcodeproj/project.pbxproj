@@ -77,18 +77,34 @@
 		3351C7ED2478059B00BECA3A /* maumNote */ = {
 			isa = PBXGroup;
 			children = (
+				3351C80B247826EB00BECA3A /* ViewController */,
+				3351C80A247826E000BECA3A /* Node */,
 				3351C7EE2478059B00BECA3A /* AppDelegate.swift */,
 				3351C7F02478059B00BECA3A /* SceneDelegate.swift */,
-				3351C7F22478059B00BECA3A /* ListViewController.swift */,
-				3351C806247813A800BECA3A /* DetailNodeViewController.swift */,
 				3351C7F42478059B00BECA3A /* Main.storyboard */,
 				3351C7F72478059F00BECA3A /* Assets.xcassets */,
 				3351C7F92478059F00BECA3A /* LaunchScreen.storyboard */,
 				3351C7FC2478059F00BECA3A /* Info.plist */,
+			);
+			path = maumNote;
+			sourceTree = "<group>";
+		};
+		3351C80A247826E000BECA3A /* Node */ = {
+			isa = PBXGroup;
+			children = (
 				3351C80224780FE800BECA3A /* DetailNode.swift */,
 				3351C8042478131000BECA3A /* CellNode.swift */,
 			);
-			path = maumNote;
+			path = Node;
+			sourceTree = "<group>";
+		};
+		3351C80B247826EB00BECA3A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3351C7F22478059B00BECA3A /* ListViewController.swift */,
+				3351C806247813A800BECA3A /* DetailNodeViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		6EF6069A49CE1093ED10471A /* Pods */ = {
