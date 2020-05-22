@@ -21,8 +21,18 @@ class ListViewController: ASViewController<ASTableNode> {
     self.node.dataSource = self
   }
   
+  override func viewDidLoad() {
+    self.navigationController?.navigationBar.topItem?.title = "마음노트"
+    self.navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(pushRegisterNodeViewController))
+  }
+  
   required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
+  }
+  
+  @objc func pushRegisterNodeViewController() {
+    let detailNodeViewController = DetailNodeViewController()
+    self.navigationController?.pushViewController(detailNodeViewController, animated: true)
   }
 }
 
