@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F8EF871607CD1FFA8BA4B3F /* Pods_maumNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D052F07864C4BCC6B2CA44E /* Pods_maumNote.framework */; };
 		3351C7EF2478059B00BECA3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3351C7EE2478059B00BECA3A /* AppDelegate.swift */; };
 		3351C7F12478059B00BECA3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3351C7F02478059B00BECA3A /* SceneDelegate.swift */; };
 		3351C7F32478059B00BECA3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3351C7F22478059B00BECA3A /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F07FE1DC1B30E4219862B7D /* Pods-maumNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maumNote.debug.xcconfig"; path = "Target Support Files/Pods-maumNote/Pods-maumNote.debug.xcconfig"; sourceTree = "<group>"; };
 		3351C7EB2478059B00BECA3A /* maumNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maumNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3351C7EE2478059B00BECA3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3351C7F02478059B00BECA3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		3351C7F72478059F00BECA3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3351C7FA2478059F00BECA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3351C7FC2478059F00BECA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		386A2C7E344E199A548A1779 /* Pods-maumNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maumNote.release.xcconfig"; path = "Target Support Files/Pods-maumNote/Pods-maumNote.release.xcconfig"; sourceTree = "<group>"; };
+		3D052F07864C4BCC6B2CA44E /* Pods_maumNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_maumNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F8EF871607CD1FFA8BA4B3F /* Pods_maumNote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18080ADF3453A8D97D7B021B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D052F07864C4BCC6B2CA44E /* Pods_maumNote.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3351C7E22478059B00BECA3A = {
 			isa = PBXGroup;
 			children = (
 				3351C7ED2478059B00BECA3A /* maumNote */,
 				3351C7EC2478059B00BECA3A /* Products */,
+				6EF6069A49CE1093ED10471A /* Pods */,
+				18080ADF3453A8D97D7B021B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = maumNote;
 			sourceTree = "<group>";
 		};
+		6EF6069A49CE1093ED10471A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F07FE1DC1B30E4219862B7D /* Pods-maumNote.debug.xcconfig */,
+				386A2C7E344E199A548A1779 /* Pods-maumNote.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3351C7FF2478059F00BECA3A /* Build configuration list for PBXNativeTarget "maumNote" */;
 			buildPhases = (
+				A850C9C621FFE46393C6DF13 /* [CP] Check Pods Manifest.lock */,
 				3351C7E72478059B00BECA3A /* Sources */,
 				3351C7E82478059B00BECA3A /* Frameworks */,
 				3351C7E92478059B00BECA3A /* Resources */,
+				5E7F919DB523C4C593BEFF5D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E7F919DB523C4C593BEFF5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-maumNote/Pods-maumNote-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-maumNote/Pods-maumNote-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-maumNote/Pods-maumNote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A850C9C621FFE46393C6DF13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-maumNote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3351C7E72478059B00BECA3A /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		3351C8002478059F00BECA3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F07FE1DC1B30E4219862B7D /* Pods-maumNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		3351C8012478059F00BECA3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 386A2C7E344E199A548A1779 /* Pods-maumNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
