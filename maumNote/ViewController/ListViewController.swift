@@ -17,10 +17,7 @@ class ListViewController: UIViewController, View {
   var disposeBag = DisposeBag()
   
   override func viewDidLoad() {
-    self.navigationController?.navigationBar.topItem?.title = "마음노트"
-    self.navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(pushAddMemoViewController))
     reactor = ViewReactor()
-    
   }
   
   func bind(reactor: ViewReactor) {

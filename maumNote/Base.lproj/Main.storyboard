@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="-678" y="-122"/>
         </scene>
-        <!--List View Controller-->
+        <!--마음감기-->
         <scene sceneID="nb8-Ig-eED">
             <objects>
                 <viewController id="yR5-5S-DVh" customClass="ListViewController" customModule="maumNote" customModuleProvider="target" sceneMemberID="viewController">
@@ -59,7 +59,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="1hm-Nk-Xer"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rtY-t6-2V7"/>
+                    <navigationItem key="navigationItem" title="마음감기" id="fJp-sf-53g">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="Owa-GN-LZJ">
+                            <connections>
+                                <segue destination="XY0-6d-3mt" kind="show" id="rhU-lG-8Hp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="zg9-be-qe4" id="vLQ-TJ-DDZ"/>
                     </connections>
@@ -68,33 +74,33 @@
             </objects>
             <point key="canvasLocation" x="60.869565217391312" y="-124.55357142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Memo View Controller-->
         <scene sceneID="HQy-cB-9Tl">
             <objects>
-                <viewController id="XY0-6d-3mt" sceneMemberID="viewController">
+                <viewController id="XY0-6d-3mt" customClass="AddMemoViewController" customModule="maumNote" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xV2-O1-GtH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5h-Gt-8Kl">
-                                <rect key="frame" x="10" y="54" width="394" height="21"/>
+                                <rect key="frame" x="10" y="98" width="394" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tNk-c2-kg7">
-                                <rect key="frame" x="10" y="85" width="394" height="34"/>
+                                <rect key="frame" x="10" y="129" width="394" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXP-5O-iae">
-                                <rect key="frame" x="10" y="129" width="394" height="21"/>
+                                <rect key="frame" x="10" y="173" width="394" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zMb-Pu-2cB">
-                                <rect key="frame" x="10" y="160" width="394" height="692"/>
+                                <rect key="frame" x="10" y="204" width="394" height="648"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -119,6 +125,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vsN-a0-qAv"/>
                     </view>
+                    <navigationItem key="navigationItem" id="u6a-ns-Idc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CsR-Id-sMe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
