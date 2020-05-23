@@ -8,12 +8,9 @@
 
 import UIKit
 import AsyncDisplayKit
+import ReactorKit
 
-class ListNodeViewController: ASViewController<ASTableNode> {
-  var items: [String] = ["Welcome to Texture-KR",
-                         "Welcome to Texture-KR",
-                         "Welcome to Texture-KR, long test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"]
-  
+class ListNodeViewController: ASViewController<ASTableNode>, View {
   init() {
     super.init(node: ASTableNode.init(style: .plain))
     self.node.backgroundColor = .white
