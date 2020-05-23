@@ -11,7 +11,7 @@ import ReactorKit
 import RxCocoa
 import RxSwift
 
-class ListViewController: UIViewController, View {
+class ListViewController: UITableViewController, View {
   var disposeBag = DisposeBag()
   
   override func viewDidLoad() {
@@ -21,7 +21,7 @@ class ListViewController: UIViewController, View {
   }
   
   func bind(reactor: ViewReactor) {
-  
+    
   }
   
   @objc func pushAddMemoViewController() {
