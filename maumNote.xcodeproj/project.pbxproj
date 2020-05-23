@@ -18,6 +18,8 @@
 		3351C8052478131000BECA3A /* CellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3351C8042478131000BECA3A /* CellNode.swift */; };
 		3351C807247813A800BECA3A /* DetailNodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3351C806247813A800BECA3A /* DetailNodeViewController.swift */; };
 		33E235BF2478967B00B5BBA5 /* AddMemoNodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E235BE2478967B00B5BBA5 /* AddMemoNodeViewController.swift */; };
+		33E235C12478BEAC00B5BBA5 /* ViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E235C02478BEAC00B5BBA5 /* ViewReactor.swift */; };
+		33E235C32478BF4D00B5BBA5 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E235C22478BF4D00B5BBA5 /* Memo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		3351C8042478131000BECA3A /* CellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellNode.swift; sourceTree = "<group>"; };
 		3351C806247813A800BECA3A /* DetailNodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNodeViewController.swift; sourceTree = "<group>"; };
 		33E235BE2478967B00B5BBA5 /* AddMemoNodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoNodeViewController.swift; sourceTree = "<group>"; };
+		33E235C02478BEAC00B5BBA5 /* ViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReactor.swift; sourceTree = "<group>"; };
+		33E235C22478BF4D00B5BBA5 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		386A2C7E344E199A548A1779 /* Pods-maumNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maumNote.release.xcconfig"; path = "Target Support Files/Pods-maumNote/Pods-maumNote.release.xcconfig"; sourceTree = "<group>"; };
 		3D052F07864C4BCC6B2CA44E /* Pods_maumNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_maumNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -79,8 +83,10 @@
 		3351C7ED2478059B00BECA3A /* maumNote */ = {
 			isa = PBXGroup;
 			children = (
+				33E235C42478BF5300B5BBA5 /* Model */,
 				3351C80B247826EB00BECA3A /* ViewController */,
 				3351C80A247826E000BECA3A /* Node */,
+				33E235C02478BEAC00B5BBA5 /* ViewReactor.swift */,
 				3351C7EE2478059B00BECA3A /* AppDelegate.swift */,
 				3351C7F02478059B00BECA3A /* SceneDelegate.swift */,
 				3351C7F42478059B00BECA3A /* Main.storyboard */,
@@ -108,6 +114,14 @@
 				33E235BE2478967B00B5BBA5 /* AddMemoNodeViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		33E235C42478BF5300B5BBA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33E235C22478BF4D00B5BBA5 /* Memo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		6EF6069A49CE1093ED10471A /* Pods */ = {
@@ -240,7 +254,9 @@
 				3351C7EF2478059B00BECA3A /* AppDelegate.swift in Sources */,
 				3351C807247813A800BECA3A /* DetailNodeViewController.swift in Sources */,
 				3351C7F12478059B00BECA3A /* SceneDelegate.swift in Sources */,
+				33E235C32478BF4D00B5BBA5 /* Memo.swift in Sources */,
 				33E235BF2478967B00B5BBA5 /* AddMemoNodeViewController.swift in Sources */,
+				33E235C12478BEAC00B5BBA5 /* ViewReactor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

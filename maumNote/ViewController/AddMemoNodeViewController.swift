@@ -7,3 +7,14 @@
 //
 
 import AsyncDisplayKit
+
+class AddMemoNodeViewController: ASViewController<ASDisplayNode> {
+  init() {
+    super.init(node: DetailNode.init())
+    self.node.backgroundColor = .white
+  }
+  
+  required init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+}
