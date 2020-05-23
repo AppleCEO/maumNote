@@ -15,10 +15,21 @@
 		3351C7F82478059F00BECA3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3351C7F72478059F00BECA3A /* Assets.xcassets */; };
 		3351C7FB2478059F00BECA3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3351C7F92478059F00BECA3A /* LaunchScreen.storyboard */; };
 		3351C807247813A800BECA3A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3351C806247813A800BECA3A /* DetailViewController.swift */; };
+		33B7D6BE24796573000AC848 /* maumNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B7D6BD24796573000AC848 /* maumNoteTests.swift */; };
 		33E235BF2478967B00B5BBA5 /* AddMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E235BE2478967B00B5BBA5 /* AddMemoViewController.swift */; };
 		33E235C12478BEAC00B5BBA5 /* ViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E235C02478BEAC00B5BBA5 /* ViewReactor.swift */; };
 		33E235C32478BF4D00B5BBA5 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E235C22478BF4D00B5BBA5 /* Memo.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33B7D6C024796573000AC848 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3351C7E32478059B00BECA3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3351C7EA2478059B00BECA3A;
+			remoteInfo = maumNote;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1F07FE1DC1B30E4219862B7D /* Pods-maumNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maumNote.debug.xcconfig"; path = "Target Support Files/Pods-maumNote/Pods-maumNote.debug.xcconfig"; sourceTree = "<group>"; };
@@ -31,6 +42,9 @@
 		3351C7FA2478059F00BECA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3351C7FC2478059F00BECA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3351C806247813A800BECA3A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		33B7D6BB24796573000AC848 /* maumNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = maumNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33B7D6BD24796573000AC848 /* maumNoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maumNoteTests.swift; sourceTree = "<group>"; };
+		33B7D6BF24796573000AC848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33E235BE2478967B00B5BBA5 /* AddMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoViewController.swift; sourceTree = "<group>"; };
 		33E235C02478BEAC00B5BBA5 /* ViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReactor.swift; sourceTree = "<group>"; };
 		33E235C22478BF4D00B5BBA5 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
@@ -44,6 +58,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F8EF871607CD1FFA8BA4B3F /* Pods_maumNote.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33B7D6B824796573000AC848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				3351C7ED2478059B00BECA3A /* maumNote */,
+				33B7D6BC24796573000AC848 /* maumNoteTests */,
 				3351C7EC2478059B00BECA3A /* Products */,
 				6EF6069A49CE1093ED10471A /* Pods */,
 				18080ADF3453A8D97D7B021B /* Frameworks */,
@@ -72,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				3351C7EB2478059B00BECA3A /* maumNote.app */,
+				33B7D6BB24796573000AC848 /* maumNoteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +123,15 @@
 				33E235BE2478967B00B5BBA5 /* AddMemoViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		33B7D6BC24796573000AC848 /* maumNoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				33B7D6BD24796573000AC848 /* maumNoteTests.swift */,
+				33B7D6BF24796573000AC848 /* Info.plist */,
+			);
+			path = maumNoteTests;
 			sourceTree = "<group>";
 		};
 		33E235C42478BF5300B5BBA5 /* Model */ = {
@@ -141,6 +173,24 @@
 			productReference = 3351C7EB2478059B00BECA3A /* maumNote.app */;
 			productType = "com.apple.product-type.application";
 		};
+		33B7D6BA24796573000AC848 /* maumNoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33B7D6C424796573000AC848 /* Build configuration list for PBXNativeTarget "maumNoteTests" */;
+			buildPhases = (
+				33B7D6B724796573000AC848 /* Sources */,
+				33B7D6B824796573000AC848 /* Frameworks */,
+				33B7D6B924796573000AC848 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33B7D6C124796573000AC848 /* PBXTargetDependency */,
+			);
+			name = maumNoteTests;
+			productName = maumNoteTests;
+			productReference = 33B7D6BB24796573000AC848 /* maumNoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -153,6 +203,10 @@
 				TargetAttributes = {
 					3351C7EA2478059B00BECA3A = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					33B7D6BA24796573000AC848 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 3351C7EA2478059B00BECA3A;
 					};
 				};
 			};
@@ -170,6 +224,7 @@
 			projectRoot = "";
 			targets = (
 				3351C7EA2478059B00BECA3A /* maumNote */,
+				33B7D6BA24796573000AC848 /* maumNoteTests */,
 			);
 		};
 /* End PBXProject section */
@@ -182,6 +237,13 @@
 				3351C7FB2478059F00BECA3A /* LaunchScreen.storyboard in Resources */,
 				3351C7F82478059F00BECA3A /* Assets.xcassets in Resources */,
 				3351C7F62478059B00BECA3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33B7D6B924796573000AC848 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +306,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33B7D6B724796573000AC848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33B7D6BE24796573000AC848 /* maumNoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33B7D6C124796573000AC848 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3351C7EA2478059B00BECA3A /* maumNote */;
+			targetProxy = 33B7D6C024796573000AC848 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3351C7F42478059B00BECA3A /* Main.storyboard */ = {
@@ -418,6 +496,46 @@
 			};
 			name = Release;
 		};
+		33B7D6C224796573000AC848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N6GUCNLQH;
+				INFOPLIST_FILE = maumNoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.kiljh.maumNoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/maumNote.app/maumNote";
+			};
+			name = Debug;
+		};
+		33B7D6C324796573000AC848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N6GUCNLQH;
+				INFOPLIST_FILE = maumNoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.kiljh.maumNoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/maumNote.app/maumNote";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -435,6 +553,15 @@
 			buildConfigurations = (
 				3351C8002478059F00BECA3A /* Debug */,
 				3351C8012478059F00BECA3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33B7D6C424796573000AC848 /* Build configuration list for PBXNativeTarget "maumNoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33B7D6C224796573000AC848 /* Debug */,
+				33B7D6C324796573000AC848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
