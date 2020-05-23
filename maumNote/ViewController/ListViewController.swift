@@ -27,9 +27,4 @@ class ListViewController: UIViewController, View {
     }
     .disposed(by: disposeBag)
   }
-  
-  @objc func pushAddMemoViewController() {
-    let addMemoViewController = AddMemoViewController()
-    self.navigationController?.pushViewController(addMemoViewController, animated: true)
-  }
 }
