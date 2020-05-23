@@ -13,6 +13,8 @@ import RxCocoa
 import RxSwift
 
 class ListNodeViewController: ASViewController<ASTableNode>, View {
+  var disposeBag = DisposeBag()
+  
   init() {
     super.init(node: ASTableNode.init(style: .plain))
     self.node.backgroundColor = .white
@@ -23,6 +25,16 @@ class ListNodeViewController: ASViewController<ASTableNode>, View {
   override func viewDidLoad() {
     self.navigationController?.navigationBar.topItem?.title = "마음노트"
     self.navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(pushAddMemoNodeViewController))
+    reactor = ViewReactor()
+  }
+  
+  func bind(reactor: ViewReactor) {
+    // State
+    reactor.state.map { $0.memos }
+      .bind(to: tableView.rx.items(cellIdentifier: "cell")) { indexPath, repo, cell in
+        cell.textLabel?.text = repo
+      }
+      .disposed(by: disposeBag)
   }
   
   required init?(coder aDecoder: NSCoder) {
