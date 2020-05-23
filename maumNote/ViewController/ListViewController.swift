@@ -24,10 +24,6 @@ class ListViewController: UIViewController, View {
   
   }
   
-  required init?(coder aDecoder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
-  }
-  
   @objc func pushAddMemoViewController() {
     let addMemoViewController = AddMemoViewController()
     self.navigationController?.pushViewController(addMemoViewController, animated: true)
