@@ -17,6 +17,11 @@ PODS:
   - ReactorKit (2.1.0):
     - RxSwift (~> 5.0)
     - WeakMapTable (~> 1.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
   - RxSwift (5.1.1)
   - Texture (2.8.1):
     - Texture/AssetsLibrary (= 2.8.1)
@@ -42,6 +47,8 @@ PODS:
 
 DEPENDENCIES:
   - ReactorKit
+  - RxCocoa
+  - RxSwift
   - Texture
 
 SPEC REPOS:
@@ -50,6 +57,8 @@ SPEC REPOS:
     - PINOperation
     - PINRemoteImage
     - ReactorKit
+    - RxCocoa
+    - RxRelay
     - RxSwift
     - Texture
     - WeakMapTable
@@ -59,10 +68,12 @@ SPEC CHECKSUMS:
   PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
   ReactorKit: 12a93358c554bb3f167b16b14c40374fa9cd5acd
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
   WeakMapTable: d0327eda092be6a8f7c532942ae98dc7948f5d32
 
-PODFILE CHECKSUM: 5c43e52ae43f8e80db2bb7b7ac1c6924cfb483a5
+PODFILE CHECKSUM: 76f6741ba409236ad5d42633040a2fcd77ffb0ae
 
 COCOAPODS: 1.8.3

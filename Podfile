@@ -8,4 +8,6 @@ target 'maumNote' do
   # Pods for maumNote
   pod "Texture"
   pod "ReactorKit"
+  pod "RxSwift"
+  pod "RxCocoa"
 end
