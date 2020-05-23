@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="-678" y="-122"/>
         </scene>
-        <!--마음감기-->
+        <!--마음노트-->
         <scene sceneID="nb8-Ig-eED">
             <objects>
                 <viewController id="yR5-5S-DVh" customClass="ListViewController" customModule="maumNote" customModuleProvider="target" sceneMemberID="viewController">
@@ -59,7 +59,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="1hm-Nk-Xer"/>
                     </view>
-                    <navigationItem key="navigationItem" title="마음감기" id="fJp-sf-53g">
+                    <navigationItem key="navigationItem" title="마음노트" id="fJp-sf-53g">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="Owa-GN-LZJ">
                             <connections>
                                 <segue destination="XY0-6d-3mt" kind="show" id="rhU-lG-8Hp"/>
