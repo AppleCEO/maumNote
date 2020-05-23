@@ -21,7 +21,7 @@ final class ViewReactor: Reactor {
     var memos: [Memo]
   }
 
-  let initialState = State(memos: [])
+  let initialState = State(memos: [Memo(title: "Welcome to Texture-KR", content: ""), Memo(title: "Welcome to Texture-KR", content: ""), Memo(title: "Welcome to Texture-KR, long test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!", content: "")])
 
   func mutate(action: Action) -> Observable<Mutation> {
     switch action {
