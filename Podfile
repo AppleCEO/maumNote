@@ -6,9 +6,7 @@ target 'maumNote' do
   use_frameworks!
 
   # Pods for maumNote
-  pod "Texture"
   pod "ReactorKit"
   pod "RxSwift"
   pod "RxCocoa"
-  pod "RxDataSources-Texture", "~> 1.2.8"
 end

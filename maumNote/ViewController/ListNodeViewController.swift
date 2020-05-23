@@ -11,9 +11,16 @@ import AsyncDisplayKit
 import ReactorKit
 import RxCocoa
 import RxSwift
+import RxDataSources_Texture
 
 class ListNodeViewController: ASViewController<ASTableNode>, View {
   var disposeBag = DisposeBag()
+  let dataSource = RxASTableSectionedReloadDataSource<SectionModel<String, String>>(
+      configureCellBlock: { (_, _, _, num) in
+          return {
+              return CellNode(item: num)
+          }
+  })
   
   init() {
     super.init(node: ASTableNode.init(style: .plain))
@@ -29,11 +36,26 @@ class ListNodeViewController: ASViewController<ASTableNode>, View {
   }
   
   func bind(reactor: ViewReactor) {
+    
+
+    Observable.just([SectionModel(model: "title", items: [1, 2, 3])])
+    
+    
     // State
     reactor.state.map { $0.memos }
-      .bind(to: tableView.rx.items(cellIdentifier: "cell")) { indexPath, repo, cell in
-        cell.textLabel?.text = repo
-      }
+      .map({ (memos) -> String in
+        var array = [String]()
+        for memo in memos {
+          array.append(memo.title)
+        }
+        return array
+      })
+//    .flatMap(<#T##selector: (String) throws -> ObservableConvertibleType##(String) throws -> ObservableConvertibleType#>)
+//      .flatMap { return Observable.from($0) }
+      .map({ (titles) -> SectionModel<String, String> in
+        SectionModel.init(model: "title", items: titles)
+      })
+      .bind(to: self.node.rx.items(dataSource: dataSource))
       .disposed(by: disposeBag)
   }
   
