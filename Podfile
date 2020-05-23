@@ -10,4 +10,5 @@ target 'maumNote' do
   pod "ReactorKit"
   pod "RxSwift"
   pod "RxCocoa"
+  pod "RxDataSources-Texture", "~> 1.2.8"
 end
