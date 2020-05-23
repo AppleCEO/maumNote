@@ -11,17 +11,24 @@ import ReactorKit
 import RxCocoa
 import RxSwift
 
-class ListViewController: UITableViewController, View {
+class ListViewController: UIViewController, View {
+  @IBOutlet var tableView: UITableView!
+  
   var disposeBag = DisposeBag()
   
   override func viewDidLoad() {
     self.navigationController?.navigationBar.topItem?.title = "마음노트"
     self.navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(pushAddMemoViewController))
     reactor = ViewReactor()
+    
   }
   
   func bind(reactor: ViewReactor) {
-    
+    reactor.state.map { $0.memos }
+      .bind(to: self.tableView.rx.items(cellIdentifier: "cell")) { indexPath, memo, cell in
+        cell.textLabel?.text = memo.title
+    }
+    .disposed(by: disposeBag)
   }
   
   @objc func pushAddMemoViewController() {
