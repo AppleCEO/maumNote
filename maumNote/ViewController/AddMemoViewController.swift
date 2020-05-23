@@ -8,10 +8,12 @@
 
 import UIKit
 import ReactorKit
+import RxCocoa
 
 class AddMemoViewController: UIViewController, View {
   @IBOutlet var titleTextField: UITextField!
   @IBOutlet var contentTextView: UITextView!
+  @IBOutlet var addButton: UIBarButtonItem!
   
   var disposeBag = DisposeBag()
   
@@ -23,11 +25,9 @@ class AddMemoViewController: UIViewController, View {
   }
   
   func bind(reactor: ViewReactor) {
-    
+    addButton.rx.tap
+      .map { Reactor.Action.add(Memo(title: self.titleTextField.text ?? "", content: self.contentTextView.text)) }
+      .bind(to: reactor.action)
+      .disposed(by: disposeBag)
   }
-  
-  @IBAction func AddMemo(_ sender: Any) {
-    
-  }
-  
 }
