@@ -27,4 +27,9 @@ class ListViewController: UIViewController, View {
     }
     .disposed(by: disposeBag)
   }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    let viewController = segue.destination as! AddMemoViewController
+    viewController.reactor = self.reactor
+  }
 }

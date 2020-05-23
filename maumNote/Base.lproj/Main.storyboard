@@ -101,7 +101,6 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zMb-Pu-2cB">
                                 <rect key="frame" x="10" y="204" width="394" height="648"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -125,7 +124,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vsN-a0-qAv"/>
                     </view>
-                    <navigationItem key="navigationItem" id="u6a-ns-Idc"/>
+                    <navigationItem key="navigationItem" id="u6a-ns-Idc">
+                        <barButtonItem key="rightBarButtonItem" title="등록" style="plain" id="HtC-WC-tuQ">
+                            <connections>
+                                <action selector="AddMemo:" destination="XY0-6d-3mt" id="o7a-wv-3aC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="contentTextView" destination="zMb-Pu-2cB" id="wFy-PT-4Dr"/>
+                        <outlet property="titleTextField" destination="tNk-c2-kg7" id="2Oy-lm-CgE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CsR-Id-sMe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
