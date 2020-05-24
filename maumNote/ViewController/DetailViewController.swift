@@ -9,5 +9,7 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+  @IBOutlet var titleLabel: UILabel!
+  @IBOutlet var contentTextView: UITextView!
   
 }

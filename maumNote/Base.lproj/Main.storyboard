@@ -52,6 +52,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="FIq-3S-KCq" kind="show" id="ced-Xd-Vof"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -136,6 +139,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CsR-Id-sMe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="767" y="-124"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="QSt-8I-CtL">
+            <objects>
+                <viewController id="FIq-3S-KCq" customClass="DetailViewController" customModule="maumNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WA6-Bl-DAa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUt-H3-TwR">
+                                <rect key="frame" x="10" y="98" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Qy-nX-Giz">
+                                <rect key="frame" x="10" y="129" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jo-fw-ZaU">
+                                <rect key="frame" x="10" y="160" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lCf-q6-Kns">
+                                <rect key="frame" x="10" y="191" width="394" height="661"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eUt-H3-TwR" firstAttribute="leading" secondItem="7oV-UK-dzR" secondAttribute="leading" constant="10" id="8Pr-gL-uhx"/>
+                            <constraint firstItem="7oV-UK-dzR" firstAttribute="trailing" secondItem="7Qy-nX-Giz" secondAttribute="trailing" constant="10" id="KrT-mA-Tge"/>
+                            <constraint firstItem="7oV-UK-dzR" firstAttribute="bottom" secondItem="lCf-q6-Kns" secondAttribute="bottom" constant="10" id="W66-B3-PKs"/>
+                            <constraint firstItem="8Jo-fw-ZaU" firstAttribute="top" secondItem="7Qy-nX-Giz" secondAttribute="bottom" constant="10" id="WMk-Ou-gV9"/>
+                            <constraint firstItem="8Jo-fw-ZaU" firstAttribute="leading" secondItem="7oV-UK-dzR" secondAttribute="leading" constant="10" id="WwW-KH-9a1"/>
+                            <constraint firstItem="lCf-q6-Kns" firstAttribute="leading" secondItem="7oV-UK-dzR" secondAttribute="leading" constant="10" id="Ywm-z3-6rT"/>
+                            <constraint firstItem="7Qy-nX-Giz" firstAttribute="leading" secondItem="7oV-UK-dzR" secondAttribute="leading" constant="10" id="aM5-hB-CQI"/>
+                            <constraint firstItem="7oV-UK-dzR" firstAttribute="trailing" secondItem="lCf-q6-Kns" secondAttribute="trailing" constant="10" id="dmN-Jw-VoE"/>
+                            <constraint firstItem="7Qy-nX-Giz" firstAttribute="top" secondItem="eUt-H3-TwR" secondAttribute="bottom" constant="10" id="hEa-0K-HYn"/>
+                            <constraint firstItem="7oV-UK-dzR" firstAttribute="trailing" secondItem="8Jo-fw-ZaU" secondAttribute="trailing" constant="10" id="l9U-4x-0OR"/>
+                            <constraint firstItem="lCf-q6-Kns" firstAttribute="top" secondItem="8Jo-fw-ZaU" secondAttribute="bottom" constant="10" id="oWi-1Y-0M8"/>
+                            <constraint firstItem="eUt-H3-TwR" firstAttribute="top" secondItem="7oV-UK-dzR" secondAttribute="top" constant="10" id="pxD-Cf-Rxj"/>
+                            <constraint firstItem="7oV-UK-dzR" firstAttribute="trailing" secondItem="eUt-H3-TwR" secondAttribute="trailing" constant="10" id="tgZ-HF-qZV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7oV-UK-dzR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WIk-4B-EHx"/>
+                    <connections>
+                        <outlet property="contentTextView" destination="lCf-q6-Kns" id="gkF-Z3-1f6"/>
+                        <outlet property="titleLabel" destination="7Qy-nX-Giz" id="Psu-4h-Uxk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tCD-kE-gD2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61" y="567"/>
         </scene>
     </scenes>
 </document>
