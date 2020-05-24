@@ -65,7 +65,7 @@
                     <navigationItem key="navigationItem" title="마음노트" id="fJp-sf-53g">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="Owa-GN-LZJ">
                             <connections>
-                                <segue destination="XY0-6d-3mt" kind="show" id="rhU-lG-8Hp"/>
+                                <segue destination="XY0-6d-3mt" kind="show" identifier="goToAdd" id="rhU-lG-8Hp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

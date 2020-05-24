@@ -29,7 +29,18 @@ class ListViewController: UIViewController, View {
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    let viewController = segue.destination as! AddMemoViewController
-    viewController.reactor = self.reactor
+    if segue.identifier == "goToAdd" {
+      let viewController = segue.destination as! AddMemoViewController
+      viewController.reactor = self.reactor
+      return
+    }
+    
+    guard let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell) else {
+      return
+    }
+      
+    let memo = reactor?.currentState.memos[indexPath.row]
+    let viewController = segue.destination as! DetailViewController
+    viewController.memo = memo
   }
 }
