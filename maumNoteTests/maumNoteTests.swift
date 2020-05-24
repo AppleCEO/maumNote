@@ -7,19 +7,30 @@
 //
 
 import XCTest
+@testable import maumNote
 
 class maumNoteTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+  var viewReactorTest: ViewReactor!
+  var memo: [Memo]!
+  
+  override func setUp() {
+    viewReactorTest = ViewReactor()
+    memo = [Memo(title: "Welcome to Texture-KR", content: ""), Memo(title: "Welcome to Texture-KR", content: ""), Memo(title: "Welcome to Texture-KR, long test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!", content: "")]
+  }
+  
+  override func tearDown() {
+    viewReactorTest = nil
+    memo = nil
+  }
+  
+  func initialMemoTest() {
+    XCTAssertEqual(viewReactorTest.initialState.memos, memo)
+  }
+  
+  func addMemoTest() {
+    let addedMemo = Memo(title: "ㅇ", content: <#T##String#>)
+    memo.append(memo)
+    XCTAssertEqual(viewReactorTest.initialState.memos, initialMemo)
+    
+  }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Memo {
+struct Memo: Equatable {
   let title: String
   let content: String
 }
