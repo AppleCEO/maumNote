@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F8EF871607CD1FFA8BA4B3F /* Pods_maumNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D052F07864C4BCC6B2CA44E /* Pods_maumNote.framework */; };
 		3351C7EF2478059B00BECA3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3351C7EE2478059B00BECA3A /* AppDelegate.swift */; };
 		3351C7F12478059B00BECA3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3351C7F02478059B00BECA3A /* SceneDelegate.swift */; };
 		3351C7F32478059B00BECA3A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3351C7F22478059B00BECA3A /* ListViewController.swift */; };
@@ -49,7 +48,6 @@
 		33E235C02478BEAC00B5BBA5 /* ViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReactor.swift; sourceTree = "<group>"; };
 		33E235C22478BF4D00B5BBA5 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		386A2C7E344E199A548A1779 /* Pods-maumNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maumNote.release.xcconfig"; path = "Target Support Files/Pods-maumNote/Pods-maumNote.release.xcconfig"; sourceTree = "<group>"; };
-		3D052F07864C4BCC6B2CA44E /* Pods_maumNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_maumNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F8EF871607CD1FFA8BA4B3F /* Pods_maumNote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +71,6 @@
 		18080ADF3453A8D97D7B021B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3D052F07864C4BCC6B2CA44E /* Pods_maumNote.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

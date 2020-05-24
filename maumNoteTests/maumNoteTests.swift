@@ -23,14 +23,7 @@ class maumNoteTests: XCTestCase {
     memo = nil
   }
   
-  func initialMemoTest() {
+  func testInitialMemo() {
     XCTAssertEqual(viewReactorTest.initialState.memos, memo)
-  }
-  
-  func addMemoTest() {
-    let addedMemo = Memo(title: "ㅇ", content: <#T##String#>)
-    memo.append(memo)
-    XCTAssertEqual(viewReactorTest.initialState.memos, initialMemo)
-    
   }
 }
