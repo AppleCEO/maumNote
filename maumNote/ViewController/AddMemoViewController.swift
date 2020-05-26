@@ -10,7 +10,7 @@ import UIKit
 import ReactorKit
 import RxCocoa
 
-class AddMemoViewController: UIViewController, View {
+class AddMemoViewController: UIViewController, StoryboardView {
   @IBOutlet var titleTextField: UITextField!
   @IBOutlet var contentTextView: UITextView!
   @IBOutlet var addButton: UIBarButtonItem!

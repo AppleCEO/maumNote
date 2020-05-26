@@ -11,7 +11,7 @@ import ReactorKit
 import RxCocoa
 import RxSwift
 
-class ListViewController: UIViewController, View {
+class ListViewController: UIViewController, StoryboardView {
   @IBOutlet var tableView: UITableView!
   
   var disposeBag = DisposeBag()
