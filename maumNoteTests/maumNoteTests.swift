@@ -2,7 +2,7 @@
 //  maumNoteTests.swift
 //  maumNoteTests
 //
-//  Created by joon-ho kil on 2020/05/23.
+//  Created by joon-ho kil on 2020/05/27.
 //  Copyright © 2020 joon-ho kil. All rights reserved.
 //
 
@@ -24,6 +24,6 @@ class maumNoteTests: XCTestCase {
   }
   
   func testInitialMemo() {
-    XCTAssertEqual(viewReactorTest.initialState.memos, memo)
+    XCTAssertEqual(viewReactorTest.currentState.memos, memo)
   }
 }

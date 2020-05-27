@@ -28,7 +28,7 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "33B7D6BA24796573000AC848"
+               BlueprintIdentifier = "33544E9C247E981400B85EC1"
                BuildableName = "maumNoteTests.xctest"
                BlueprintName = "maumNoteTests"
                ReferencedContainer = "container:maumNote.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "33B7D6BA24796573000AC848"
+               BlueprintIdentifier = "33544E9C247E981400B85EC1"
                BuildableName = "maumNoteTests.xctest"
                BlueprintName = "maumNoteTests"
                ReferencedContainer = "container:maumNote.xcodeproj">
