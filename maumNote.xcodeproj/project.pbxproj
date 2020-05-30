@@ -19,6 +19,7 @@
 		33E235C12478BEAC00B5BBA5 /* ViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E235C02478BEAC00B5BBA5 /* ViewReactor.swift */; };
 		33E235C32478BF4D00B5BBA5 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E235C22478BF4D00B5BBA5 /* Memo.swift */; };
 		7327D80159A9E4F29BA24492 /* Pods_maumNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14291E2E08A81B44B93108C3 /* Pods_maumNote.framework */; };
+		813BCF183B34AD819DA94E20 /* Pods_maumNoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08C0C1F04CBC0D08E0F9518 /* Pods_maumNoteTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,9 @@
 		33E235C02478BEAC00B5BBA5 /* ViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReactor.swift; sourceTree = "<group>"; };
 		33E235C22478BF4D00B5BBA5 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		386A2C7E344E199A548A1779 /* Pods-maumNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maumNote.release.xcconfig"; path = "Target Support Files/Pods-maumNote/Pods-maumNote.release.xcconfig"; sourceTree = "<group>"; };
+		B08C0C1F04CBC0D08E0F9518 /* Pods_maumNoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_maumNoteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B195282A8AD4F5BD67496E27 /* Pods-maumNoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maumNoteTests.debug.xcconfig"; path = "Target Support Files/Pods-maumNoteTests/Pods-maumNoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0E944A681C9FF01798206A0 /* Pods-maumNoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maumNoteTests.release.xcconfig"; path = "Target Support Files/Pods-maumNoteTests/Pods-maumNoteTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813BCF183B34AD819DA94E20 /* Pods_maumNoteTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				14291E2E08A81B44B93108C3 /* Pods_maumNote.framework */,
+				B08C0C1F04CBC0D08E0F9518 /* Pods_maumNoteTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,6 +165,8 @@
 			children = (
 				1F07FE1DC1B30E4219862B7D /* Pods-maumNote.debug.xcconfig */,
 				386A2C7E344E199A548A1779 /* Pods-maumNote.release.xcconfig */,
+				B195282A8AD4F5BD67496E27 /* Pods-maumNoteTests.debug.xcconfig */,
+				F0E944A681C9FF01798206A0 /* Pods-maumNoteTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -189,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33544EA4247E981400B85EC1 /* Build configuration list for PBXNativeTarget "maumNoteTests" */;
 			buildPhases = (
+				D0DDDC0C4CC28ED300A5BBF8 /* [CP] Check Pods Manifest.lock */,
 				33544E99247E981400B85EC1 /* Sources */,
 				33544E9A247E981400B85EC1 /* Frameworks */,
 				33544E9B247E981400B85EC1 /* Resources */,
@@ -295,6 +304,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-maumNote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0DDDC0C4CC28ED300A5BBF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-maumNoteTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -413,6 +444,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -463,10 +495,12 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -483,10 +517,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = me.kiljh.maumNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -507,11 +543,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;
 		};
 		33544EA5247E981400B85EC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B195282A8AD4F5BD67496E27 /* Pods-maumNoteTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -522,16 +560,19 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = me.kiljh.maumNoteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/maumNote.app/maumNote";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Debug;
 		};
 		33544EA6247E981400B85EC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0E944A681C9FF01798206A0 /* Pods-maumNoteTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -547,6 +588,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/maumNote.app/maumNote";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;
 		};

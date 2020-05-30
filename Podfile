@@ -9,4 +9,8 @@ target 'maumNote' do
   pod "ReactorKit"
   pod "RxSwift"
   pod "RxCocoa"
+
+  target 'maumNoteTests' do
+    inherit! :search_paths
+  end
 end
