@@ -14,7 +14,7 @@ final class ViewReactor: Reactor {
   }
 
   enum Mutation {
-    case addMemos(Memo)
+    case addMemo(Memo)
   }
 
   struct State {
@@ -27,7 +27,7 @@ final class ViewReactor: Reactor {
     switch action {
     case let .add(memo): // when user updates the search query
       if let memo = memo {
-        return Observable.just(Mutation.addMemos(memo))
+        return Observable.just(Mutation.addMemo(memo))
       }
       return Observable<Mutation>.empty()
     }
@@ -35,7 +35,7 @@ final class ViewReactor: Reactor {
 
   func reduce(state: State, mutation: Mutation) -> State {
     switch mutation {
-    case let .addMemos(memo):
+    case let .addMemo(memo):
       var newState = state
       newState.memos.append(memo)
       return newState
