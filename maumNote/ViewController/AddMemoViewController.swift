@@ -29,5 +29,11 @@ class AddMemoViewController: UIViewController, StoryboardView {
       .map { Reactor.Action.add(Memo(title: self.titleTextField.text ?? "", content: self.contentTextView.text)) }
       .bind(to: reactor.action)
       .disposed(by: disposeBag)
+    
+    addButton.rx.tap
+      .subscribe(onNext: { [weak self] _ in
+        self?.navigationController?.popViewController(animated: true)
+      })
+      .disposed(by: disposeBag)
   }
 }
